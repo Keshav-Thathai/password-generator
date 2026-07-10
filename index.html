@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🔒 Password Generator by Keshav Thathai</h1>
+
+<form method="POST">
+
+<input type="number" name="length" placeholder="Enter Length of password that you want to make" required>
+
+<button type="submit">Generate</button>
+
+</form>
+
+{% if password %}
+
+<h2>{{ password }}</h2>
+
+{% endif %}
+<footer>
+    Made with ❤️ using Python and Flask
+</footer>
+
+</div>
+
+</body>
+</html>
+</html>
